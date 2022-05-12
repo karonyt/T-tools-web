@@ -1,0 +1,111 @@
+<html>
+<body>
+    
+<head>
+<body bgcolor="#000000" text="#cccccc">
+
+<p><font size="10" color="#ff7f50" face="ＭＳ Ｐ明朝,ＭＳ 明朝">T tools</font></p>
+<p><font size="6" color="#ffff00" face="ＭＳ Ｐ明朝,ＭＳ 明朝"></p>
+
+  <meta charset="utf-8" />
+  <title>T tools</title>
+    <style>
+  </style>
+  <script>
+    function showClock() {
+      let nowTime = new Date();
+      let nowMonth = nowTime.getMonth();
+      a = 1
+      nowMonth += a
+      let nowDay = nowTime.getDate();
+      let nowHour = nowTime.getHours();
+      let nowMin  = nowTime.getMinutes();
+      let nowSec  = nowTime.getSeconds();
+      let msg = "⌚：" + nowMonth + "月" + nowDay + "日" + nowHour + "時" + nowMin + "分" + nowSec + "秒";
+      document.getElementById("realtime").innerHTML = msg;
+    }
+    setInterval('showClock()',1000);
+  </script>
+      
+<body>
+
+  <p id="realtime"></p>
+
+</body>
+        
+    <p></font><font size="6" color="#00bfff">G<font size="5" color="#ff0000">o<font size="5" color="#ffff00">o<font size="5" color="#00bfff">g<font size="6" color="#3cb371">l<font size="5" color="#ff0000">e</font></p>
+    
+<a href= "//server1//" id="a1"><font size="0" color="#000000" face="ＭＳ Ｐ明朝,ＭＳ 明朝"></a>
+
+<input type="text" value="" id="text1" maxlength="100" />
+<input type="button" value="🔍" onclick="clickBtn1()" />
+
+<script>
+  function clickBtn1() {
+    const t1 = document.getElementById("text1").value;
+    document.getElementById("a1").href="https://www.google.com/search?q="+t1;
+     window.open("https://www.google.com/search?q="+t1,'_blank');
+  }
+</script>
+    
+<p><font size="5" color="#ff0000" face="ＭＳ Ｐ明朝,ＭＳ 明朝">Youtube🎬</font></p>
+    
+<a href= "//server2//" id="a2"><font size="0" color="#000000" face="ＭＳ Ｐ明朝,ＭＳ 明朝"></a>
+
+<input type="text" value="" id="text2" maxlength="100" />
+<input type="button" value="🔍" onclick="clickBtn2()" />
+
+<script>
+  function clickBtn2() {
+    const t2 = document.getElementById("text2").value;
+    document.getElementById("a2").href="https://www.youtube.com/results?search_query="+t2;
+    window.open("https://www.youtube.com/results?search_query="+t2, '_blank');
+  }
+</script>
+    
+<p><font size="5" color="#00ff00" face="ＭＳ Ｐ明朝,ＭＳ 明朝">Yahoo</font></p>
+    
+<a href= "//server3//" id="a3"><font size="0" color="#000000" face="ＭＳ Ｐ明朝,ＭＳ 明朝"></a>
+
+<input type="text" value="" id="text3" maxlength="100" />
+<input type="button" value="🔍" onclick="clickBtn3()" />
+
+<script>
+  function clickBtn3() {
+    const t3 = document.getElementById("text3").value;
+    document.getElementById("a3").href="https://search.yahoo.com/search?p="+t3;
+    window.open("https://search.yahoo.com/search?p="+t3, '_blank');
+  }
+</script>
+    
+<p><font size="5" color="#20b2aa" face="ＭＳ Ｐ明朝,ＭＳ 明朝">Ecosia</font></p>
+    
+<a href= "//server4//" id="a4"><font size="0" color="#000000" face="ＭＳ Ｐ明朝,ＭＳ 明朝"></a>
+
+<input type="text" value="" id="text4" maxlength="100" />
+<input type="button" value="🔍" onclick="clickBtn4()" />
+
+<script>
+  function clickBtn4() {
+    const t4 = document.getElementById("text4").value;
+    document.getElementById("a4").href="https://www.ecosia.org/search?method=index&q="+t4;
+    window.open("https://www.ecosia.org/search?method=index&q="+t4, '_blank');
+  }
+</script>
+    <p><font size="5" color="#00ffff" face="ＭＳ Ｐ明朝,ＭＳ 明朝">URL直接貼り付け</font></p>
+    
+<a href= "//server5//" id="a5"><font size="0" color="#000000" face="ＭＳ Ｐ明朝,ＭＳ 明朝"></font></a>
+
+<input type="text" value="" id="text5" maxlength="100" />
+<input type="button" value="🔍" onclick="clickBtn5()" />
+
+<script>
+  function clickBtn5() {
+    const t5 = document.getElementById("text5").value;
+    document.getElementById("a5").href=t5;
+    window.open(t5, '_blank');
+  }
+</script>
+</head>    
+</body>
+</html>
